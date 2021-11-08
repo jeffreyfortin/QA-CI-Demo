@@ -27,7 +27,7 @@ class SystemTestsConfiguration:
         self.environmentVariables = {}
 
         # This is the path to where the build or make command should be executed
-        self.locationWhereWeRunMake =  os.path.join(self.cwd, "src")
+        self.locationWhereWeRunMake =  os.path.join(self.cwd, "QA-CI-Demo", "src")
 
         # This is the top level make command needed to build the application
         self.topLevelMakeCommand = r'gcc -o manager_driver whitebox.c database.c manager.c manager_driver.c'

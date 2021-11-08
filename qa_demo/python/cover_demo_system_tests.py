@@ -33,7 +33,7 @@ class SystemTestsConfiguration:
         self.topLevelMakeCommand = r'gcc -o manager_driver whitebox.c database.c manager.c manager_driver.c'
 
         # This is the location where we should run the tests.
-        self.locationWhereWeRunTests = os.path.join(self.cwd, "src")
+        self.locationWhereWeRunTests = os.path.join(self.cwd, "QA-CI-Demo", "src")
 
         # This is the name of the test application to be invoked when running a test
         self.nameOfTestExecutable = "manager_driver"
